@@ -1,5 +1,4 @@
-# cybersecurity-notes
-From microbiology to cybersecurity — notes from Google's Cybersecurity Certificate and TryHackMe.
+# From microbiology to cybersecurity — notes from Google's Cybersecurity Certificate and TryHackMe.
 
 ## 🏅 Certifications & Learning Paths
 
