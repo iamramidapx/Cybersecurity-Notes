@@ -1,5 +1,5 @@
-# notes from Google's Cybersecurity Certificate and TryHackMe.
-
+notes from Google's Cybersecurity Certificate and TryHackMe.
+---
 ## 🏅 Certifications & Learning Paths
 
 Official certificates and completion records included in application supporting documents:
