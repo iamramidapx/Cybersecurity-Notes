@@ -1,4 +1,4 @@
-Notes from Google's Cybersecurity Certificate and TryHackMe.
+Notes from Google's Cybersecurity Certificate and TryHackMe
 
 ## 🏅 Certifications & Learning Paths
 
