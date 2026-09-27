@@ -1,6 +1,6 @@
 # Programming Basics: Python, JavaScript & SQL (TryHackMe)
 
-Notes from TryHackMe rooms: a "guess the number" coding exercise built first in **Python**, then rebuilt in **JavaScript**, followed by a separate **SQL** fundamentals room ("Café SQL").
+Notes from TryHackMe rooms: a "guess the number" coding exercise built first in **Python**, then rebuilt in **JavaScript**, followed by a separate **SQL** fundamentals room.
 
 ---
 
