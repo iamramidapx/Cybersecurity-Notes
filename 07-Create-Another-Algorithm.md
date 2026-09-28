@@ -133,3 +133,46 @@ After `1.1.1.1` is removed, the list shifts left and the loop jumps past `2.2.2.
 ips = [ip for ip in ips if ip not in remove]
 print(ips)   # ['3.3.3.3']
 ```
+# Summary: Update a File Through a Python Algorithm
+
+## Overview
+
+This document is a portfolio activity from a security-focused course. The scenario: you are a security professional at a health care company, and you must regularly update a file listing the IP addresses allowed to access a restricted subnetwork containing patient records. A separate **remove list** identifies IP addresses that must be taken off this **allow list** (`allow_list.txt`). The task is to write a Python algorithm that automates this update.
+
+The document contains three parts: the activity instructions, a completed exemplar, and a blank template to fill in.
+
+## The Algorithm
+
+| Step | What it does | Key Python elements |
+|------|--------------|---------------------|
+| 1. Open the file | Assigns `"allow_list.txt"` to `import_file` and opens it for reading | `with` statement, `open(import_file, "r")`, `as file` |
+| 2. Read the contents | Converts the file's contents into a string stored in `ip_addresses` | `.read()` |
+| 3. Convert to a list | Splits the string into individual IP addresses so they can be removed one by one | `.split()` (splits on whitespace by default) |
+| 4. Iterate through the remove list | Loops over each IP address in `remove_list` using `element` as the loop variable | `for element in remove_list:` |
+| 5. Remove matching IPs | Checks whether `element` is in `ip_addresses`, and if so removes it | `if` conditional, `.remove()` |
+| 6. Update the file | Joins the list back into a string separated by newlines, then overwrites the file | `"\n".join(...)`, `open(import_file, "w")`, `.write()` |
+
+### Key Details
+
+- **`with` and `open()`**: The `with` statement automatically closes the file after use. `open()` takes the file name and a mode (`"r"` to read, `"w"` to write).
+- **`.read()` and `.write()`**: `.read()` turns file contents into a string. `.write()` writes a string to the file and replaces any existing content when the file is opened with `"w"`.
+- **`.split()`**: Turns the whitespace-separated string of IPs into a list, which is necessary for removing individual elements.
+- **`for` loop**: Repeats the same code for every IP address in the remove list.
+- **`.remove()`**: Deletes an element from the list. It works cleanly here because `ip_addresses` contains **no duplicates**, and the preceding `if` check prevents an error when an element isn't in the list.
+- **`.join()`**: Converts the revised list back into a string, using `"\n"` to place each IP address on its own line.
+
+## What the Activity Requires
+
+The finished portfolio document should include:
+
+- Screenshots or typed versions of the Python code for each step
+- Explanations of the syntax, functions, and keywords used
+- A **project description** at the start (3–5 sentences)
+- A **summary** at the end (4–6 sentences)
+- Specific details on `with`/`open()`, `.read()`/`.write()`, `.split()`, the `for` loop, and `.remove()`
+
+The instructions also recommend saving a copy of the finished work to use in a professional portfolio, followed by a self-assessment (Step 10).
+
+## Purpose
+
+The exercise demonstrates how Python can automate a real access-control task: keeping an allow list current so that IP addresses no longer authorized cannot reach restricted patient data. It also serves as a portfolio piece showing file handling, string and list manipulation, loops, and conditionals to potential employers.
