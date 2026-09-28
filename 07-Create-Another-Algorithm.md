@@ -176,6 +176,7 @@ The instructions also recommend saving a copy of the finished work to use in a p
 ## Purpose
 
 The exercise demonstrates how Python can automate a real access-control task: keeping an allow list current so that IP addresses no longer authorized cannot reach restricted patient data. It also serves as a portfolio piece showing file handling, string and list manipulation, loops, and conditionals to potential employers.
+
 ---  
 
 # Python Debugging
