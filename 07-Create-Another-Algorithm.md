@@ -1,4 +1,4 @@
-# Summary: Create Another Algorithm (Python Lab)
+# Summary: Create Another Algorithm (Python)
 
 ## Main Idea
 
