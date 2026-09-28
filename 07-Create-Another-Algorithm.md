@@ -176,3 +176,124 @@ The instructions also recommend saving a copy of the finished work to use in a p
 ## Purpose
 
 The exercise demonstrates how Python can automate a real access-control task: keeping an allow list current so that IP addresses no longer authorized cannot reach restricted patient data. It also serves as a portfolio piece showing file handling, string and list manipulation, loops, and conditionals to potential employers.
+---  
+
+# Python Debugging
+
+## 1. Types of Errors
+
+| Type | What it is | Error message? | Example |
+|---|---|---|---|
+| **Syntax error** | Invalid use of Python's grammar | Yes (`SyntaxError`, or `IndentationError`, a subclass) | Missing colon, quote, or closing bracket |
+| **Logic error** | Code is valid and runs, but gives unintended results | No | Using `>=` instead of `<` in a condition |
+| **Exception** | Syntactically correct code that cannot execute | Yes | Undefined variable, bad index |
+
+**Common exceptions**
+- `NameError`: a variable or function was never assigned or defined.
+- `IndexError`: an index doesn't exist in the sequence (e.g., `usernames[3]` in a 3-item list).
+- `TypeError`: wrong data type used (e.g., adding a string to an integer).
+- `FileNotFoundError`: opening a file that doesn't exist at the given location.
+
+**Useful notes**
+- Python reports errors one at a time, starting with the first it hits. Fix it, rerun, and repeat.
+- Syntax error messages usually point you to the fix. Logic errors and exceptions need extra strategies.
+
+---
+
+## 2. Debugging Strategies
+
+- **Debuggers (in an IDE):** Use *breakpoints* to run code up to a chosen line, and inspect variable values as they change. Especially helpful for logic errors.
+- **AI coding assistants** (e.g., Gemini Code Assist): Can analyze code, find errors, and suggest fixes. Always review and validate their output, since it may be inaccurate, suboptimal, or insecure.
+- **Print statements:** Insert temporary prints (with descriptive text or line numbers) to trace execution flow.
+  - *Example:* prints showed `.append()` ran for every user, even those already in `approved_users`. The fix is to put `.append(user)` inside an `else` block.
+
+---
+
+## 3. Lab Solutions (Activity: Debug Python Code)
+
+| Task | Error type | Problem | Fix |
+|---|---|---|---|
+| 1 | Syntax | `for i in range(10)` has no colon | Add `:` |
+| 2 | Syntax | Missing closing quote and comma after `"zdutchma"` | Close the string and separate elements with commas |
+| 3 | Syntax | `print("update needed".upper()` is missing `)` | Add the closing parenthesis |
+| 4 | Syntax ×2 + exception | `username_list` misspelled (`NameError`); `=` used instead of `==`; `print` not indented | Use `usernames_list`, `==`, and indent the body of the `if` |
+| 5 | Exception (`IndexError`) | `usernames_list[5]` on a 5-item list | Use index `[4]` (indexing starts at 0) |
+| 6 | Syntax + exception | `with open(...)` missing colon; `split.ip_addresses()` is wrong | Add `:` and use `ip_addresses.split()` |
+| 7 | Logic | Indexes in `patch_schedule` were mismatched (OS 1 → `[2]`, OS 2 → `[0]`) | OS 1 → `[0]`, OS 2 → `[1]`, OS 3 → `[2]` |
+
+**Task 4 corrected code**
+```python
+for name in usernames_list:
+    if name == username:
+        print("The user is an approved user")
+```
+
+**Task 6 corrected code**
+```python
+with open(import_file, "r") as file:
+    ip_addresses = file.read()
+
+ip_addresses = ip_addresses.split()
+```
+
+### Lab takeaways
+- Read the error message: it names the error type and the line.
+- Lists use 0-based indexing.
+- `==` compares; `=` assigns.
+- Colons, quotes, parentheses, and indentation matter in Python.
+
+---
+
+## 4. Beyond Parsing: Data Structures for Security Analysis
+
+- **Sets:** Automatically remove duplicates. Useful for finding *unique* IP addresses or attackers.
+- **Dictionaries:** Map a key to a value. Useful for frequency analysis, such as failed logins per user.
+
+```python
+stats = {}
+
+with open("security.log", "r") as file:
+    for line in file:
+        level = line.split(":")[0]
+        if level in stats:
+            stats[level] += 1
+        else:
+            stats[level] = 1
+
+# e.g. {"INFO": 500, "ERROR": 12, "WARNING": 45}
+```
+
+---
+
+## 5. Big Picture: Python for Security Automation
+
+1. **Why automate:** Increases speed, consistency, and scalability; lowers Mean Time to Respond (MTTR); reduces alert fatigue.
+2. **Core Python tools:** Conditionals (`if`/`else`) make decisions; loops (`for`/`while`) process many items.
+3. **File parsing:** Turns unstructured text into organized data.
+   - Open files safely with `with open(file, "r") as f:` (auto-closes the file).
+   - Use `.read()` to get the contents as a string.
+   - Use `.split()` to break strings into lists, then index (e.g., `[0]`) to pull out values.
+4. **Advanced handling:** Sets for uniqueness, dictionaries for counting.
+
+---
+
+## 6. Quiz Answers at a Glance
+
+**Error-types quiz**
+- Three error types: syntax errors, logic errors, exceptions.
+- Python's "else if" keyword is `elif` (not `elsif`).
+- Code that runs but produces the wrong result is a **logic error**.
+- An unknown or out-of-range index is an **exception** (`IndexError`).
+
+**Final quiz**
+1. Identifying and fixing errors in code is **debugging**.
+2. The `device_id = "p35rv47` error is a **missing quotation mark**.
+3. Fix: **indent** the line assigning `"Charley"` to `first_name`.
+4. `username_list[10]` on a 5-item list is an **exception** (`IndexError`).
+5. Print statements help **identify which sections of code are working properly**.
+6. Open a file for reading: `with open("logs.txt", "r") as file:`
+7. String to list: `device_ids = logins.split()`
+8. **Parsing** is converting data into a more readable, structured format.
+9. `read_text = text.read()` reads the file in `text` and stores its contents as a **string** in `read_text`.
+10. To automate login review, use **an `if` statement** (check for failed logins), **a `for` loop** (iterate the list), and **`split()`** (turn login info into a list).
+
