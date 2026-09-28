@@ -133,7 +133,7 @@ After `1.1.1.1` is removed, the list shifts left and the loop jumps past `2.2.2.
 ips = [ip for ip in ips if ip not in remove]
 print(ips)   # ['3.3.3.3']
 ```
-# Summary: Update a File Through a Python Algorithm
+# Update a File Through a Python Algorithm
 
 ## Overview
 
