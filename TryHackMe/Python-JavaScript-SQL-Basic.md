@@ -1,4 +1,4 @@
-# Programming Basics: Python, JavaScript & SQL (TryHackMe)
+# Programming Basics: Python, JavaScript & SQL 
 
 Notes from TryHackMe rooms: a "guess the number" coding exercise built first in **Python**, then rebuilt in **JavaScript**, followed by a separate **SQL** fundamentals room.
 
