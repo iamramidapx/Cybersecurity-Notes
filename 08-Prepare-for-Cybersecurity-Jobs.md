@@ -37,7 +37,7 @@ Every organization has its own data classification policy; understanding it help
 - **Cultivating a security mindset**: staying current on the latest vulnerabilities and threat trends (NDAs are legal tools, not mindset-builders).
 - **Examples of a security mindset in action**: exercising suspicion before opening email attachments, and reporting suspicious emails (Zero Trust, proactive defense).
 
-# Put It to Work: Prepare for Cybersecurity Jobs — Core Work Summary
+# Put It to Work: Prepare for Cybersecurity Jobs
 
 Course 8 of the Google Cybersecurity Certificate (Coursera). Covers incident classification, escalation, stakeholder communication, community engagement, AI in cybersecurity, and interview prep.
 
