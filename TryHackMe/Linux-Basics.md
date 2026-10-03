@@ -1,6 +1,6 @@
 # Linux Basics: Worked Examples
 
-Examples based on the notes in `TryHackMe-style tasks'.
+Examples based on the notes in `TryHackMe tasks'.
 
 ---
 
