@@ -1,6 +1,7 @@
 # 06. Sound the Alarm: Detection and Response
 > Course focus: Understand the incident response lifecycle and practice using tools to detect and respond to cybersecurity incidents.
-Preparation: the planning and training process — the closest thing to hands-on SOC work in the Google Cybersecurity Certificate.
+> Study notes covering alert analysis, documentation, the phishing playbook, incident triage, business continuity, and SIEM tools (Splunk and Google SecOps).
+
 
 ---
 
@@ -165,6 +166,90 @@ A SIEM collects and analyzes log data across an organization so security teams a
 
 ---
 
-## Key Takeaway
+## 11. Detection and alerts (quiz recap)
+
+- Detection tools have limitations. Attackers keep developing evasion techniques, and a tool only detects what it is configured or programmed to recognize.
+- Analysts refine alert rules to improve detection accuracy and to reduce false positives.
+- **Analysis** is the investigation and validation of alerts.
+- High alert volumes are caused by broad detection rules and misconfigured alert settings.
+
+## 12. Security documentation
+
+Documentation is recorded content used to support investigations, complete tasks, and communicate findings.
+
+**Benefits**
+
+| Benefit | What it gives you |
+|---|---|
+| Transparency | Compliance, insurance, and legal evidence. Chain of custody is an example of an audit trail. |
+| Standardization | Repeatable processes, knowledge transfer, and onboarding. An incident response plan is an example. |
+| Clarity | Quick access to information. Analysts document why an alert was escalated or closed. |
+
+**Best practices**
+
+- **Know your audience.** An incident summary for a SOC manager differs from one for a CEO.
+- **Be concise.** State the purpose immediately. Executive summaries should be short enough to skim.
+- **Update regularly.** Review documentation after incidents and as new threats emerge.
+
+## 13. Phishing playbook (v1.0, for level-one SOC analysts)
+
+**Example ticket:** A-2703, "SERVER-MAIL Phishing attempt possible download of malware", severity Medium, status Open. The email posed as a job applicant and carried a password-protected attachment, `bfsvc.exe`. A known malicious file hash was provided.
+
+**Steps**
+
+1. **Receive the phishing alert.**
+2. **Evaluate the alert.** Check severity, receiver and sender details (email and IP), subject line, message body, and attachments or links.
+   - Low: no escalation.
+   - Medium: may need escalation.
+   - High: escalate immediately.
+3. **Check for links or attachments.**
+   - If there are none, go to Step 4.
+   - If there are, do not open them outside an authorized, isolated environment.
+   - Check their reputation by hash (for example, VirusTotal).
+   - If they are not malicious, go to Step 4.
+   - If they are malicious, summarize your findings, set the ticket to **Escalated**, and notify a level-two analyst.
+4. **Close the ticket** when there are no links or attachments, or when they are confirmed non-malicious. Include a brief summary of your findings and the reason for closing.
+
+## 14. Incident triage
+
+Triage is the prioritizing of incidents by importance or urgency. It has three steps:
+
+1. **Receive and assess.** Verify the alert is valid. Ask whether it is a false positive, whether it has happened before, whether it is tied to a known vulnerability, and how severe it is.
+2. **Assign priority.** Weigh these three factors:
+   - Functional impact on systems and services.
+   - Information impact on confidentiality, integrity, and availability.
+   - Recoverability, meaning whether recovery is possible and worth the cost.
+3. **Collect and analyze.** Gather evidence, research externally, and document the investigation. Escalate to a level-two analyst or manager if needed.
+
+**Benefits:** resource management (focus on urgent threats) and a standardized approach through playbooks.
+
+## 15. Business continuity planning
+
+- A **business continuity plan (BCP)** outlines how to sustain operations during and after a major disruption. Entry-level analysts usually don't write BCPs, but they should understand them.
+- A BCP is not the same as a **disaster recovery plan**, which covers restoring information systems after a major disaster.
+- Ransomware can cripple critical infrastructure such as healthcare by encrypting records.
+- **Resilience** is the ability to prepare for, respond to, and recover from disruptions.
+
+**Recovery sites (site resilience)**
+
+| Site | Description |
+|---|---|
+| Hot | Fully operational duplicate of the primary environment, available immediately. |
+| Warm | Fully updated and configured, but not live. Can be made operational quickly. |
+| Cold | Some of the required infrastructure. Needs additional work before use. |
+
+## 16. SIEM and search tools
+
+- **SIEM process steps:** collect and process data, then normalize it (for example, to UDM) so it can be read and analyzed.
+- **Splunk** uses **SPL** (Search Processing Language). `*` is the wildcard character.
+- **Google SecOps (Chronicle)** uses **raw log search** for unstructured, unparsed logs. UDM is used for structured data.
+- Useful search skills include contextual awareness (for example, telling web traffic from sensitive `vendor_sales` logs) and granular filtering to find specific events, such as a single unauthorized login attempt.
+
+## Key takeaways
+
+- Document your reasoning for every alert you escalate or close.
+- Follow the playbook in order, and never open suspicious attachments outside an isolated environment.
+- Triage so the most critical incidents get attention first.
+- Plan for continuity before an incident, not after.
 
 This course is where the program gets closest to real SOC work that shows up in almost every real-world security job description. Worth the most detailed notes of the whole certificate.
