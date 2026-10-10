@@ -19,7 +19,6 @@ The course teaches how to use AI tools (Gemini, Career Dreamer, NotebookLM, Gemi
 
 - Identify skills from past jobs, study, and volunteering that carry over to the role you want.
 - A good **career identity statement** is short, names specific skills, and sounds positive and genuine. It is a highlight reel, not a list of every duty.
-- Career Dreamer (US only) helps draft the statement. Adding education and interests gives it more material to find connections.
 - Use the statement on LinkedIn, in networking, and in applications.
 
 ## Module 2: Job search plan, Resume
