@@ -22,7 +22,7 @@ The course teaches how to use AI tools (Gemini, Career Dreamer, NotebookLM, Gemi
 - Career Dreamer (US only) helps draft the statement. Adding education and interests gives it more material to find connections.
 - Use the statement on LinkedIn, in networking, and in applications.
 
-## Module 2: Job search plan, resume, cover letter, online presence
+## Module 2: Job search plan, Resume
 
 **Job search plan**
 - Ask Gemini for a plan, then refine it: prioritize by the hours you have per week, ask for industry-specific job boards, and request a checklist or bullet format.
@@ -42,34 +42,12 @@ The course teaches how to use AI tools (Gemini, Career Dreamer, NotebookLM, Gemi
 - Be honest about proficiency levels.
 - Treat the output as a starting point, and check it for accuracy.
 
-**Cover letter**
-- Tailor it to each company and keep it to about one page.
-- Show a connection to the company, state your motivation, speak to the job description, show what makes you a fit, and proofread.
-- Use it to explain gaps or a career change.
-- Give Gemini the job description, resume, and identity statement. Then edit so it sounds like you.
-
-**Online presence**
-- Make interests and skills clear.
-- Engage with others' posts.
-- Describe projects with your specific role and results.
-- Keep personal content separate from professional profiles unless it supports your brand.
-
-## Module 3: Tracking applications and networking
-
+## Module 3: Tracking applications 
 **Tracker (Google Sheets + Gemini)**
 - Link the resume and cover letter version used for each application.
 - Record dates of calls and interviews, plus offers and rejections.
 - Add a follow-up column.
 - Add company insights, for example from Gemini Deep Research.
-- Keep one central tracker rather than one sheet per job.
-
-**Researching employers**
-- Check official sites and social channels for talking points, projects, and culture.
-
-**Networking**
-- Some jobs are never advertised, and referrals carry weight.
-- Benefits: authentic relationships, insider knowledge, staying current, support, practice with communication, and long-term growth.
-- Tactics: prepare talking points and think about what you can offer, group your contacts, and find "connectors."
 
 ## Module 4: Interview preparation
 
@@ -91,35 +69,13 @@ The course teaches how to use AI tools (Gemini, Career Dreamer, NotebookLM, Gemi
 - Use it to suggest likely questions and STAR-based answers, generate an FAQ, and create an **Audio Overview** to listen to on the go.
 - When reusing a notebook for a new role, deselect irrelevant sources first.
 
-**Gemini Live**
-- Do voice mock interviews in the Gemini mobile app and ask for feedback on your STAR answers.
-- Afterward, ask yourself whether your answers were clear, structured, quantified, and enthusiastic. You can review the transcript.
-
-**Pitch:** write a confident 20-second professional pitch.
-
-**After the interview**
-- Draft a thank-you email with Gemini. Include a professional greeting, specific thanks, a reference to something you discussed, renewed enthusiasm, next steps, and a professional closing.
-- Personalize it so it sounds like you.
-
-**Offers and rejections**
-- Respond promptly and gratefully, and state your decision timeline.
-- Review the full offer: pay, benefits, work arrangement, and start date.
-- Research market pay (Indeed, Glassdoor, the US Bureau of Labor Statistics' Occupational Outlook Handbook).
-- If you aren't selected, reply politely and ask to be considered for future roles. Silence isn't necessarily a reflection of you.
-
 ## Key takeaways
 
 1. Treat AI output as a draft. Your voice, facts, and numbers make it work.
 2. Quantify achievements (X-Y-Z, STAR results).
 3. Tailor every resume and cover letter to the job.
-4. Stay organized with a single tracker.
-5. Networking is relationship-building, not just asking for favors.
-6. Practice out loud before the real interview.
 
-## Next steps from the course
 
-- Google AI Essentials
-- Google Prompting Essentials
 
 ---
 
