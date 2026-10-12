@@ -5,9 +5,9 @@ From Microbiology to Cybersecurity: my study notes, lab write-ups, and learning 
 ## 🏅 Certifications & Learning Paths
 
 - **Google Cybersecurity Professional Certificate** (Coursera)
-  - [Verify Credential][https://www.coursera.org/account/accomplishments/verify/YOUR_CODE](https://coursera.org/verify/professional-cert/MFCYLOWDCH94)
+  - [Verify Credential](https://coursera.org/verify/professional-cert/MFCYLOWDCH94)
 - **Cyber Security 101 Learning Path** (TryHackMe)
-  - [View Certificate]([https://tryhackme.com/certificate/YOUR_CERT_LINK](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DFSZAKWOPG.pdf)
+  - [View Certificate](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DFSZAKWOPG.pdf)
 - **TryHackMe SOC Level 1 Path**
   - Profile: [notevenpearl](https://tryhackme.com/p/notevenpearl) (Top 5% as of Sep 2026)
 
@@ -26,6 +26,3 @@ From Microbiology to Cybersecurity: my study notes, lab write-ups, and learning 
 | - | Cisco | [Cisco.md](Cisco.md) |
 | - | TryHackMe | [TryHackMe/](TryHackMe/) |
 
-> Note: file names above are guesses from the truncated names on GitHub. Fix each link to match your real file names.
-
----
