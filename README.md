@@ -1,16 +1,31 @@
-## Notes from Google's Cybersecurity Certificate and TryHackMe
+# Notes from Google's Cybersecurity Certificate and TryHackMe
 
+From Microbiology to Cybersecurity: my study notes, lab write-ups, and learning progress.
 
 ## 🏅 Certifications & Learning Paths
 
-Official certificates and completion records included in application supporting documents:
-
 - **Google Cybersecurity Professional Certificate** (Coursera)
-  - [Verify Credential](https://coursera.org/verify/professional-cert/MFCYLOWDCH94)
+  - [Verify Credential]([https://www.coursera.org/account/accomplishments/verify/YOUR_CODE](https://coursera.org/verify/professional-cert/MFCYLOWDCH94)
 - **Cyber Security 101 Learning Path** (TryHackMe)
-  - Certificate ID: `THM-DFSZAKWOPG`
-- **TryHackMe SOC Level 1 Path** 
-  - Profile: [notevenpearl](https://tryhackme.com/p/notevenpearl) (Top 6% Global Ranking)
+  - [View Certificate]([https://tryhackme.com/certificate/YOUR_CERT_LINK](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DFSZAKWOPG.pdf)
+- **TryHackMe SOC Level 1 Path**
+  - Profile: [notevenpearl](https://tryhackme.com/p/notevenpearl) (Top 5% as of Sep 2026)
+
+## 📚 Notes
+
+| # | Topic | File |
+|---|-------|------|
+| 01 | Intro | [01-Intro.md](01-Intro.md) |
+| 03 | Connect and Protect: Networks | [03-Connect-Protect-Network.md](03-Connect-Protect-Network.md) |
+| 04 | Tools of the Trade: Linux & SQL | [04-Tools-Of-The-Trade.md](04-Tools-Of-The-Trade.md) |
+| 05 | Assets, Threats, and Vulnerabilities | [05-Assets-Threats-Vulnerabilities.md](05-Assets-Threats-Vulnerabilities.md) |
+| 06 | Sound the Alarm | [06-Sound-The-Alarm.md](06-Sound-The-Alarm.md) |
+| 07 | Create Another Algorithm | [07-Create-Another-Algorithm.md](07-Create-Another-Algorithm.md) |
+| 08 | Prepare for Cybersecurity Jobs | [08-Prepare-For-Cybersecurity-Jobs.md](08-Prepare-For-Cybersecurity-Jobs.md) |
+| 09 | Accelerate Your Job Search | [09-Accelerate-Your-Job-Search.md](09-Accelerate-Your-Job-Search.md) |
+| - | Cisco | [Cisco.md](Cisco.md) |
+| - | TryHackMe | [TryHackMe/](TryHackMe/) |
+
+> Note: file names above are guesses from the truncated names on GitHub. Fix each link to match your real file names.
 
 ---
-*Note: Full certificate documents, verification links, and hands-on lab achievements are formally compiled in the application supplementary portfolio.*
