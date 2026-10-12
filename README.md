@@ -5,7 +5,7 @@ From Microbiology to Cybersecurity: my study notes, lab write-ups, and learning 
 ## 🏅 Certifications & Learning Paths
 
 - **Google Cybersecurity Professional Certificate** (Coursera)
-  - [Verify Credential](https://coursera.org/verify/professional-cert/MFCYLOWDCH94)
+  - [Veiw Certificate](https://coursera.org/verify/professional-cert/MFCYLOWDCH94)
 - **Cyber Security 101 Learning Path** (TryHackMe)
   - [View Certificate](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-DFSZAKWOPG.pdf)
 - **TryHackMe SOC Level 1 Path**
