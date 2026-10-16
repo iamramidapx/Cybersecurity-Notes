@@ -129,16 +129,3 @@ Two different inputs producing the same hash. Because inputs are unlimited and o
 - **Windows** stores hashed credentials (NTLM) in the SAM database, or in `NTDS.dit` on domain controllers.
 
 ---
-
-## 4. Quick Reference
-
-| Goal | Recommended approach |
-|------|----------------------|
-| Encrypt bulk data | AES (symmetric) |
-| Exchange keys securely | Diffie-Hellman / ECDH, or RSA key transport |
-| Sign or authenticate | RSA, ECDSA, or Ed25519 |
-| Verify file integrity | SHA-256 or stronger (not MD5/SHA-1) |
-| Store passwords | Argon2, scrypt, bcrypt, or PBKDF2 — always with a unique salt |
-| Prove a website's identity | TLS certificate chain to a trusted root CA |
-
----
