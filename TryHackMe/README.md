@@ -26,6 +26,7 @@ Notes from my TryHackMe learning paths, written as I work through each room.
 | Note | Topic |
 |------|-------|
 | [Caesar-Cipher](Caesar-Cipher.md) | How the Caesar cipher works and techniques for cracking it |
+| [Cryptography](Cryptography.md) | cryptography fundamentals |
 
 ### Blue Team / SOC
 | Note | Topic |
