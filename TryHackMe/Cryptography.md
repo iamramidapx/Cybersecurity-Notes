@@ -1,4 +1,4 @@
-# Cryptography Study Notes
+# Cryptography: Study Notes
 
 A concise summary covering cryptography fundamentals, public-key cryptography, and hashing concepts.
 
