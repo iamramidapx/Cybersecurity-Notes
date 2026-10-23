@@ -16,6 +16,7 @@ From Microbiology to Cybersecurity: my study notes, lab write-ups, and learning 
 | # | Topic | File |
 |---|-------|------|
 | 01 | Intro | [01-Intro.md](01-Intro.md) |
+| 02 | Play It Safe | [02-Play-It -Safe.md](02-Play-It-Safe.md) |
 | 03 | Connect and Protect: Networks | [03-Connect-Protect-Network.md](03-Connect-Protect-Network.md) |
 | 04 | Tools of the Trade: Linux & SQL | [04-Tools-Of-The-Trade.md](04-Tools-Of-The-Trade.md) |
 | 05 | Assets, Threats, and Vulnerabilities | [05-Assets-Threats-Vulnerabilities.md](05-Assets-Threats-Vulnerabilities.md) |
